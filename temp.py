@@ -1,8 +1,11 @@
 weight = float(input('weight : ?'))
 height = float(input('height : ?'))
 bmi = weight / ((height / 100)*(height / 100))
-
 print('bmi = ', bmi)
+
+if_end = input('if_end : ?')
+if if_end == 'if_end':
+	raise SystemExit
 
 if bmi < 18.5:
 	print('light')
